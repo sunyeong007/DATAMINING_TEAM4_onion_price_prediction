@@ -51,8 +51,8 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
     b) 2020년이후_1개월단위예측 폴더에 onion_after2020_combined.xlsx이 저장된다.
     
 2. 1-a, 1-b의 데이터 파일을 eda.ipynb를 실행해 변수의 특징 및 상관관계를 살펴본다.
-3. 1-a 파일로 6개월후예측.ipynb를 실행하면 예측 결과가 저장된다.
-4. 1-b 파일로 한달후예측.ipynb를 실행하면 예측 결과가 저장된다.
+3. 1-a 파일로 6개월후예측.ipynb를 실행하면 예측 결과 및 feature importance를 확인할 수 있다.
+4. 1-b 파일로 한달후예측.ipynb를 실행하면 예측 결과 및 feature importance를 확인할 수 있다.
 
 
 # Results
