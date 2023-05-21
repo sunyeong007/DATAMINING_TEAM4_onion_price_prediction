@@ -78,7 +78,7 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
 
 - 양파 도매가격 전처리
 
-`'상품_양파_{}년_일별.xlsx'`(2013~2023년), `'중품_양파_{}년_일별.xlsx'`(2013~2023년) 데이터 `new_df **=** onion_df**.**groupby('date_time')['평균']**.**mean()**.**reset_index()` 코드사용해서 상품 중품 평균 계산후 새로운 column 형성→ 첫 행만 null값 확인후 `new_onion_df**.**loc[0,'상품중품평균가격'] **=** new_onion_df['상품중품평균가격'][1]` 다음행 가격과 동일하게 처리→`'onion_price_data.xlsx'` 데이터 추출 
+`'상품_양파_{}년_일별.xlsx'`(2013-2023년), `'중품_양파_{}년_일별.xlsx'`(2013-2023년) 데이터 `new_df **=** onion_df**.**groupby('date_time')['평균']**.**mean()**.**reset_index()` 코드사용해서 상품 중품 평균 계산후 새로운 column 형성→ 첫 행만 null값 확인후 `new_onion_df**.**loc[0,'상품중품평균가격'] **=** new_onion_df['상품중품평균가격'][1]` 다음행 가격과 동일하게 처리→`'onion_price_data.xlsx'` 데이터 추출 
 
 - 기상환경 전처리
 
