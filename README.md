@@ -2,12 +2,14 @@
 
 # Purpose
 CA저장고에 양파를 저장하거나 판매할 시기를 정하는 데 도움이 되도록 양파의 가격을 예측
-
-# Method
-단기(1개월)와 장기(6개월)로 나눠서 데이터를 최대한 활용함
+    단기(1개월) : CA 저장고에 저장 후, 매월 가격 추세를 예상해 가격이 증가했을 때 팔 수 있도록
+    장기(6개월) : CA 저장고에 저장하기 전, 추후 6개월의 추세를 예상해가격이 감소했을 때 살 수 있도록
 
 # Model
-XGboost
+XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 만듦
+    장점1. 랜덤 포레스트보다 빠르고 높은 예측능력 가짐
+    장점2. 변수 종류가 많고 데이터가 클수록 상대적으로 뛰어난 예측 능력 보임
+
 
 ### File Structure of Codes
 
@@ -58,15 +60,6 @@ XGboost
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/446447e3-f030-44df-b36c-54bfd7c2a8a2)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/004f0ea3-045f-4eb0-b10b-0b9515d50536)
 
-## 1개월 후 예측 Feature importance
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/d74e7eee-3c93-4bc1-8396-d588e45bfb7e)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/08da2ee0-da7f-4c2d-8a89-566cda3746ba)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/3c871b44-4f43-44fe-8456-9ff8114d0c54)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/138ce757-8458-42f7-8efc-a89a2105e7f4)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/7a3c22e4-de30-4982-aee2-a6eba002de47)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/74921f08-e252-4455-84ff-c483eae19ee5)
-
-
 ## 6개월 후 예측 시각화
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/fded9c59-0354-4205-bca5-618fbb73143b)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/be48ff6d-b1e5-4024-a4ac-63757636b979)
@@ -75,9 +68,6 @@ XGboost
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/cd5ed32c-adf6-4538-b772-5b21481eff60)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/44736e96-9043-4cbc-b94b-189015e05b13)
 
-
-
-## 6개월 후 예측 Feature importance
 
 
 
