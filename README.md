@@ -50,18 +50,37 @@ XGboost
 
 
 # Results
-## 1개월 후 예측 시각화 & Feature importance
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/741f2588-3ab7-466f-b823-cb8c79eb1e20)![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/d74e7eee-3c93-4bc1-8396-d588e45bfb7e)
-
+## 1개월 후 예측 시각화
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/741f2588-3ab7-466f-b823-cb8c79eb1e20)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/b84b0aec-9882-4116-a5f8-56f24143216a)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/b903a052-fd44-40fd-bd7f-11efa495eea3)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/844ddac9-df65-4987-8f8f-1277ac2d0933)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/446447e3-f030-44df-b36c-54bfd7c2a8a2)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/004f0ea3-045f-4eb0-b10b-0b9515d50536)
 
+## 1개월 후 예측 Feature importance
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/d74e7eee-3c93-4bc1-8396-d588e45bfb7e)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/08da2ee0-da7f-4c2d-8a89-566cda3746ba)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/3c871b44-4f43-44fe-8456-9ff8114d0c54)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/138ce757-8458-42f7-8efc-a89a2105e7f4)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/7a3c22e4-de30-4982-aee2-a6eba002de47)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/74921f08-e252-4455-84ff-c483eae19ee5)
 
 
----
+## 6개월 후 예측 시각화
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/fded9c59-0354-4205-bca5-618fbb73143b)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/be48ff6d-b1e5-4024-a4ac-63757636b979)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/1da015a2-709d-40dd-af87-9c8d361e176b)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/f51ae713-7315-47fd-88b0-3a21c3acabcb)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/cd5ed32c-adf6-4538-b772-5b21481eff60)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/44736e96-9043-4cbc-b94b-189015e05b13)
+
+
+
+## 6개월 후 예측 Feature importance
+
+
+
 
 - 양파 도매가격 전처리
 
