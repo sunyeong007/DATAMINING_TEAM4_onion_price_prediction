@@ -1,4 +1,4 @@
-# Onion Price Prediction by DATAMINING TEAM5 
+# Onion Price Prediction by DATAMINING TEAM4
 
 # Purpose
 CA저장고에 양파를 저장하거나 판매할 시기를 정하는 데 도움이 되도록 양파의 가격을 예측
