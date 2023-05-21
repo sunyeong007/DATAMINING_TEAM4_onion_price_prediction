@@ -57,7 +57,7 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
 
 # Results
 ## 1개월 후 예측 시각화
-### 2020.01.01~2022.11.01년 데이터
+### 2020.01.01~2022.11.01 
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/741f2588-3ab7-466f-b823-cb8c79eb1e20)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/b84b0aec-9882-4116-a5f8-56f24143216a)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/b903a052-fd44-40fd-bd7f-11efa495eea3)
@@ -66,7 +66,7 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/004f0ea3-045f-4eb0-b10b-0b9515d50536)
 
 ## 6개월 후 예측 시각화
-### 2013.01.01~2022.11.01년 데이터
+### 2013.01.01~2022.11.01 
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/fded9c59-0354-4205-bca5-618fbb73143b)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/be48ff6d-b1e5-4024-a4ac-63757636b979)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/1da015a2-709d-40dd-af87-9c8d361e176b)
