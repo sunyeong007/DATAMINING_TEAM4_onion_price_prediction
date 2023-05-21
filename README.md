@@ -83,7 +83,7 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
     상품 중품 평균 계산후 새로운 column 형성→ 첫 행 null이면 다음 행 값으로 채우고, 나머지 null은 interpolate로 채움
     
     < 전처리 후 데이터 >
-    'onion_price_data.xlsx' 데이터로 저장 
+    'onion_price_data.xlsx' 
 
 #### 기상환경 전처리
     < 원본 데이터 >
@@ -93,7 +93,8 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
     지역별 평균풍속, 일조율 새로운 column 형성후 병합
     
     < 전처리 후 데이터 >
-    'weather_df_after2013.xlsx', 'weather_df_after2020.xlsx' 데이터로 저장
+    'weather_df_after2013.xlsx'
+    'weather_df_after2020.xlsx' 
     
 #### 토양환경 전처리
     < 원본 데이터 >
@@ -104,21 +105,41 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
     null 값 확인 후 interpolate 사용해 채움    
     
     < 전처리 후 데이터 >
-    'moist_data.xlsx' 데이터로 저장
+    'moist_data.xlsx' 
 
+#### 재배량 전처리
+    < 원본 데이터 >
+    '2013_2023_onion_area_product.xlsx'
+    
+    일별 단위의 새 데이터프레임을 만든 후, 연도에 해당하는 값 넣음   
+    
+    < 전처리 후 데이터 >
+    'new_quantity_area_2013_22.xlsx'
+    
+    < 원본 데이터 >
+    '2020_2023_onion_area_product.xlsx'
+    
+    일별 단위의 새 데이터프레임을 만든 후, 연도에 해당하는 값 넣음
+    일별 단위의 새 데이터프레임을 만든 후, 월별 생산량 데이터를 interpolate로 일별데이터로 변환
+    두 데이터프레임을 연도 기준으로 합침
+    
+    < 전처리 후 데이터 >
+    'new_quantity_area_2020_22.xlsx'
 
+#### 경유 전처리
+    < 원본 데이터 >
+    '경유.xlsx'
+    
+    null 값이 없는 일별데이터라 그대로 사용    
+    
+    < 전처리 후 데이터 >
+    'moist_data.xlsx' 
 
-
-- 재배량 전처리
-
-`'2013_2023_onion_area_product.xlsx'` 데이터에 `yearly_area_prod_df['year'] **=** pd**.**DatetimeIndex(yearly_area_prod_df['date_time'])**.**year`  사용하여 year, month  칼럼 추가 → `area_prod_df **=** pd**.**merge(new_withnull_df, yearly_area_prod_df, on**=**'year')` 두 데이터 프레임 합침 → `'new_quantity_area_2013_22.xlsx'` 로 추출
-
-`'2013_2023_onion_area_product.xlsx'` 데이터에  `yearly_area_prod_df['year'] **=** pd**.**DatetimeIndex(yearly_area_prod_df['date_time'])**.**year`  사용하여 year, month  칼럼 추가 후 `daily_prod_df['생산량(kg)'] **=** daily_prod_df['생산량(kg)'] **/** 30` 월별 값을 일별로 /30해줌 → `daily_prod_df **=** daily_prod_df**.**rename(columns**=**{'생산량(kg)': '월단위생산량(kg)'})` 생산량 column 이름 월단위생산량으로 변환 → `area_prod_df **=** pd**.**merge(yearly_area_prod_df, daily_prod_df, on**=**'year')` year column 기준으로 두 데이터 프레임 합침 → `'new_quantity_area_2020_22.xlsx'` 데이터 추출 
-
-- 경유 전처리
-
-`'경유.xlsx'` 데이터 null값 확인 후 이상 없어 그대로 사용
-
-- 각종 지수 전처리
-
-`'지수데이터.xlsx'` 데이터 `df**.**rename` 함수 사용하여 column 이름 변환 → `new_index_df **=** index_df**.**interpolate()` 사용하여 월별데이터 일별데이터로 변환 →`'index_data.xlsx'` 데이터 추출
+#### 지수 전처리
+    < 원본 데이터 >
+    '지수데이터.xlsx'
+    
+    월별 물가지수 데이터를 interpolate로 일별데이터로 바꿔서 넣음  
+    
+    < 전처리 후 데이터 >
+    'moist_data.xlsx' 
