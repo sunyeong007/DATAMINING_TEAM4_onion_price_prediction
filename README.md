@@ -1,6 +1,13 @@
 # Onion Price Prediction by DATAMINING TEAM5 
 
-CA저장고에 양파를 저장하거나 판매할 시기를 정하는 데 도움이 되도록 가격 예측
+# Purpose
+CA저장고에 양파를 저장하거나 판매할 시기를 정하는 데 도움이 되도록 양파의 가격을 예측
+
+# Method
+단기(1개월)와 장기(6개월)로 나눠서 데이터를 최대한 활용함
+
+# Model
+XGboost
 
 ### File Structure of Codes
 
@@ -42,6 +49,14 @@ CA저장고에 양파를 저장하거나 판매할 시기를 정하는 데 도�
 4. 1-b 파일로 한달후예측.ipynb를 실행하면 예측 결과가 저장된다.
 
 
+# Results
+## 1개월 후 예측 시각화 & Feature importance
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/741f2588-3ab7-466f-b823-cb8c79eb1e20)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/b84b0aec-9882-4116-a5f8-56f24143216a)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/b903a052-fd44-40fd-bd7f-11efa495eea3)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/844ddac9-df65-4987-8f8f-1277ac2d0933)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/446447e3-f030-44df-b36c-54bfd7c2a8a2)
+![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/004f0ea3-045f-4eb0-b10b-0b9515d50536)
 
 
 
