@@ -54,7 +54,6 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
 3. 1-a 파일로 6개월후예측.ipynb를 실행하면 예측 결과 및 feature importance를 확인할 수 있다.
 4. 1-b 파일로 한달후예측.ipynb를 실행하면 예측 결과 및 feature importance를 확인할 수 있다.
 
-
 # Results
 ## 1개월 후 예측 시각화
 ### 2020.01.01~2022.11.01 
@@ -75,25 +74,40 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
 
 
 
+[전처리 자세한 내용]
+#### 양파 도매가격 전처리
+    < 원본 데이터 >
+    '상품_양파_{}년_일별.xlsx'(2013-2023년)
+    '중품_양파_{}년_일별.xlsx'(2013-2023년)
+    
+    상품 중품 평균 계산후 새로운 column 형성→ 첫 행 null이면 다음 행 값으로 채우고, 나머지 null은 interpolate로 채움
+    
+    < 전처리 후 데이터 >
+    'onion_price_data.xlsx' 데이터로 저장 
 
-- 양파 도매가격 전처리
+#### 기상환경 전처리
+    < 원본 데이터 >
+    'weather_after2013.xlsx'
+    'weather_after2020.xlsx'
+    
+    지역별 평균풍속, 일조율 새로운 column 형성후 병합
+    
+    < 전처리 후 데이터 >
+    'weather_df_after2013.xlsx', 'weather_df_after2020.xlsx' 데이터로 저장
+    
+#### 토양환경 전처리
+    < 원본 데이터 >
+    '양파_토양수분.xlsx'
+    
+    10, 20, 30CM 밑 토양수분의 평균을 얕은평균토양수분이라는 새로운 컬럼으로 추가
+    양파와 상관 없는 1.5M 평균 습도(%), 4.0M 평균 습도(%) 컬럼은 제거
+    null 값 확인 후 interpolate 사용해 채움    
+    
+    < 전처리 후 데이터 >
+    'moist_data.xlsx' 데이터로 저장
 
-`'상품_양파_{}년_일별.xlsx'`(2013-2023년), `'중품_양파_{}년_일별.xlsx'`(2013-2023년) 데이터 `new_df **=** onion_df**.**groupby('date_time')['평균']**.**mean()**.**reset_index()` 코드사용해서 상품 중품 평균 계산후 새로운 column 형성→ 첫 행만 null값 확인후 `new_onion_df**.**loc[0,'상품중품평균가격'] **=** new_onion_df['상품중품평균가격'][1]` 다음행 가격과 동일하게 처리→`'onion_price_data.xlsx'` 데이터 추출 
 
-- 기상환경 전처리
 
-`'weather_after2013.xlsx'` 데이터에 `weather_df['평균풍속(m/s)'] **=** weather_df[['평균풍속(m/s)_통영', '평균풍속(m/s)_울진', '평균풍속,` `weather_df['일조율(%)'] **=** weather_df[['일조율(%)_통영', '일조율(%)_울진', '일조율(%)_여수']]**.**mean(axis**=**1)` 사용하여 지역별 평균풍속, 일조율 새로운 column 형성후 병합→`'weather_df_after2013.xlsx'` 데이터로 추출 
-
-`'weather_after2020.xlsx'` 데이터에 `weather_df['평균풍속(m/s)'] **=** weather_df[['평균풍속(m/s)_통영', '평균풍속(m/s)_울진', '평균풍속,` `weather_df['일조율(%)'] **=** weather_df[['일조율(%)_통영', '일조율(%)_울진', '일조율(%)_여수']]**.**mean(axis**=**1)` 사용하여 지역별 평균풍속, 일조율 새로운 column 형성후 병합→`'weather_df_after2020.xlsx'` 데이터로 추출 
-
-```
-weather_df['평균풍속(m/s)']= weather_df[['평균풍속(m/s)_통영', '평균풍속(m/s)_울진', '평균풍속(m/s)_여수']].mean(axis=1)
-weather_df['일조율(%)']= weather_df[['일조율(%)_통영', '일조율(%)_울진', '일조율(%)_여수']]
-```
-
-- 토양환경 전처리
-
-`'양파_토양수분.xlsx'` 데이터에 `df['얕은평균토양수분'] **=** df[['10CM 일 토양수분(%)', '20CM 일 토양수분(%)', '30CM 일 토양수` 사용하여 새로운 칼럼 추가, `columns_to_drop **=** ['1.5M 평균 습도(%)', '4.0M 평균 습도(%)', '10CM 일 토양수분(%)', '20CM 일` 사용하여 필요 없는 column 제거 → null 값 확인후 `new_moist_df **=** moist_df**.**interpolate()` 빈 값 채움 →`'moist_data.xlsx'` 데이터 추출 
 
 - 재배량 전처리
 
