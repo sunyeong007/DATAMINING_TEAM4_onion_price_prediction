@@ -5,19 +5,25 @@
 ```bash
 ├── 전처리 합치기
 │   ├── 경유전처리
+│   │   └── preprocessing_oil.ipynb
 │   ├── 기상전처리
-│   ├── boxEnlarge.py
-│   ├── dataset.py
-│   ├── gaussian.py
-│   ├── imgaug.py
-│   ├── imgproc.py
+│   │   └── preprocessing_weather_after2013.ipynb
+│   │   └── preprocessing_weather_after2020.ipynb
+│   ├── 양파가격전처리
+│   │   └── preprocessing_onion_price.ipynb
+│   ├── 재배량전처리
+│   │   └── preprocessing_quantity_area_after2013.ipynb
+│   │   └── preprocessing_quantity_area_after2020.ipynb
+│   ├── 지수전처리
+│   │   └── preprocessing_지수.ipynb
+│   ├── 토양습도전처리
+│   │   ├── preprocessing_습도_토양수분.ipynb
+│   ├── combining_onion_total_file_after2013.ipynb
+│   ├── combining_onion_total_file_after2020.ipynb
 ├── 2020년이후_1개월단위예측
-│   ├── pseudo_label
-│   │   ├── make_charbox.py
-│   │   └── watershed.py
-
+│   ├── 한달후예측.ipynb
 ├── 2013년이후_6개월단위예측
-│   └── mseloss.py
+│   └── 6개월후예측.ipynb
 ├── eda.ipynb
 ```
 
