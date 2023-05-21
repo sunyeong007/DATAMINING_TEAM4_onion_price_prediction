@@ -1,7 +1,31 @@
-# DATAMINING_TEAM5_onion_price_prediction
+# DATAMINING TEAM5 
+# Onion Price Prediction
 
 
+```bash
+├── 전처리 합치기
+│   ├── 경유전처리
+│   ├── 기상전처리
+│   ├── boxEnlarge.py
+│   ├── dataset.py
+│   ├── gaussian.py
+│   ├── imgaug.py
+│   ├── imgproc.py
+├── 2020년이후_1개월단위예측
+│   ├── pseudo_label
+│   │   ├── make_charbox.py
+│   │   └── watershed.py
 
+├── 2013년이후_6개월단위예측
+│   └── mseloss.py
+├── eda.ipynb
+```
+
+
+# How to Use
+
+
+# Index
 
 
 # ReadMe 파일 - 전처리 파트
