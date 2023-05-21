@@ -70,9 +70,7 @@ XGboost : 순차적으로 트리를 만들어 이전 트리보다 나은 트리 
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/fded9c59-0354-4205-bca5-618fbb73143b)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/be48ff6d-b1e5-4024-a4ac-63757636b979)
 ![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/1da015a2-709d-40dd-af87-9c8d361e176b)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/f51ae713-7315-47fd-88b0-3a21c3acabcb)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/cd5ed32c-adf6-4538-b772-5b21481eff60)
-![image](https://github.com/sunyeong007/DATAMINING_TEAM5_onion_price_prediction/assets/63898232/44736e96-9043-4cbc-b94b-189015e05b13)
+
 
 
 
